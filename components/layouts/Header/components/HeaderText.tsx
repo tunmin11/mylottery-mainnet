@@ -1,7 +1,7 @@
 const HeaderText = () => {
 
     return (
-        <div className="flex flex-col text-center gap-8 mt-10 py-10">
+        <div className="flex flex-col text-center gap-8 py-10">
             <text className="lg:text-2xl text-xl uppercase text-gray-800">very first</text>
             <text className="lg:text-8xl text-5xl uppercase text-gray-900">nft-lottery</text>
             <text className="text-2xl uppercase text-gray-800">for myanmar</text>

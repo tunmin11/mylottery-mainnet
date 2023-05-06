@@ -27,7 +27,7 @@ const CountDown = ({date} : any)=> {
         <div className="w-screen flex justify-center py-8 px-9">
             <div className="grid grid-flow-col gap-10 text-center auto-cols-max">
                 <div className="flex flex-col">
-                    <span className="countdown font-mono lg:text-7xl text-4xl">
+                    <span className="countdown lg:text-7xl text-4xl">
                     <span style={{"--value": countdown.days} as React.CSSProperties}>
                         { countdown.days }
                     </span>
@@ -35,7 +35,7 @@ const CountDown = ({date} : any)=> {
                     days
                 </div> 
                 <div className="flex flex-col">
-                    <span className="countdown font-mono lg:text-7xl text-4xl">
+                    <span className="countdown lg:text-7xl text-4xl">
                     <span style={{"--value": countdown.hours} as React.CSSProperties}>
                         { countdown.hours }
                     </span>
@@ -43,7 +43,7 @@ const CountDown = ({date} : any)=> {
                     hours
                 </div> 
                 <div className="flex flex-col">
-                    <span className="countdown font-mono lg:text-7xl text-4xl">
+                    <span className="countdown lg:text-7xl text-4xl">
                     <span style={{"--value": countdown.minutes} as React.CSSProperties}>
                         { countdown.minutes }
                     </span>
@@ -51,7 +51,7 @@ const CountDown = ({date} : any)=> {
                     min
                 </div> 
                 <div className="flex flex-col">
-                    <span className="countdown font-mono lg:text-7xl text-4xl">
+                    <span className="countdown lg:text-7xl text-4xl">
                     <span style={{"--value": countdown.seconds} as React.CSSProperties}>
                         { countdown.seconds }
                     </span>
