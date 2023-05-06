@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const CountDown = ({date}) => {
+const CountDown = ({date} : any)=> {
 
     const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
@@ -28,31 +28,43 @@ const CountDown = ({date}) => {
             <div className="grid grid-flow-col gap-10 text-center auto-cols-max">
                 <div className="flex flex-col">
                     <span className="countdown font-mono lg:text-7xl text-4xl">
-                    <span style={{"--value": countdown.days}}></span>
+                    <span style={{"--value": countdown.days} as React.CSSProperties}>
+                        { countdown.days }
+                    </span>
                     </span>
                     days
                 </div> 
                 <div className="flex flex-col">
                     <span className="countdown font-mono lg:text-7xl text-4xl">
-                    <span style={{"--value": countdown.hours}}></span>
+                    <span style={{"--value": countdown.hours} as React.CSSProperties}>
+                        { countdown.hours }
+                    </span>
                     </span>
                     hours
                 </div> 
                 <div className="flex flex-col">
                     <span className="countdown font-mono lg:text-7xl text-4xl">
-                    <span style={{"--value": countdown.minutes}}></span>
+                    <span style={{"--value": countdown.minutes} as React.CSSProperties}>
+                        { countdown.minutes }
+                    </span>
                     </span>
                     min
                 </div> 
                 <div className="flex flex-col">
                     <span className="countdown font-mono lg:text-7xl text-4xl">
-                    <span style={{"--value": countdown.seconds}}></span>
+                    <span style={{"--value": countdown.seconds} as React.CSSProperties}>
+                        { countdown.seconds }
+                    </span>
                     </span>
                     sec
                 </div>
             </div>
         </div>
     )
+}
+
+CountDown.prototype = {
+    date: Date
 }
 
 export default CountDown;
