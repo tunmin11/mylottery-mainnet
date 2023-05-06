@@ -1,0 +1,36 @@
+{
+  "tokenStandard": "nft",
+  "number": 1000,
+  "symbol": "MLPR",
+  "sellerFeeBasisPoints": 800,
+  "isMutable": true,
+  "isSequential": false,
+  "creators": [
+    {
+      "address": "5L8kGLVnTMmLv4Qw95aD8BPjaFkC6B4DvUXBS8iytdKA",
+      "share": 100
+    }
+  ],
+  "uploadMethod": "bundlr",
+  "ruleSet": null,
+  "awsConfig": null,
+  "nftStorageAuthToken": null,
+  "shdwStorageAccount": null,
+  "pinataConfig": null,
+  "hiddenSettings": null,
+  "guards": {
+    "default": {
+      "mintLimit": {
+        "id": 1,
+        "limit": 3
+      },
+      "solPayment": {
+        "value": 0.5,
+        "destination": "Fu5Wo3F1Yx3RnQRmsF4Zi27NKCaKRkAWB8XGhuqgPSgD"
+      },
+      "startDate": {
+        "date": "2022-10-23T20:00:00Z"
+      }
+    }
+  }
+}
