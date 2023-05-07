@@ -23,11 +23,11 @@ const NavBar = () => {
             </div>
             <div className="navbar-center hidden lg:flex px-5">
                 <ul className="menu menu-horizontal px-1">
-                    <li className="btn-disabled bg-transparent" aria-label="Coming Soon!"><a href="#" className="hover:bg-transparent hover:text-red-600">2D</a></li>
-                    <li className="btn-disabled bg-transparent" aria-label="Coming Soon!"><a href="#" className="hover:bg-transparent hover:text-red-600">3D</a></li>
-                    <li className="btn-disabled bg-transparent" aria-label="Coming Soon!"><a href="#" className="hover:bg-transparent hover:text-red-600">QuickCash</a></li>
-                    <li className="btn-disabled bg-transparent" aria-label="Coming Soon!"><a href="#" className="hover:bg-transparent hover:text-red-600">Roadmap</a></li>
-                    <li className="btn-disabled bg-transparent" aria-label="Coming Soon!"><a href="#" className="hover:bg-transparent hover:text-red-600">Calendar</a></li>
+                    <li className="btn-disabled bg-transparent"><a href="#" className="hover:bg-transparent hover:text-red-600">2D</a></li>
+                    <li className="btn-disabled bg-transparent"><a href="#" className="hover:bg-transparent hover:text-red-600">3D</a></li>
+                    <li className="btn-disabled bg-transparent"><a href="#" className="hover:bg-transparent hover:text-red-600">QuickCash</a></li>
+                    <li className="btn-disabled bg-transparent"><a href="#" className="hover:bg-transparent hover:text-red-600">Roadmap</a></li>
+                    <li className="btn-disabled bg-transparent"><a href="#" className="hover:bg-transparent hover:text-red-600">Calendar</a></li>
                 </ul>
             </div>
             <div className="navbar-end">

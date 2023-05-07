@@ -19,6 +19,7 @@ import {
   mintV2Instruction,
 } from "@/utils/mintV2"
 import { fromTxError } from "@/utils/errors"
+import { toast } from "react-toastify"
 export default function Home() {
   const wallet = useWallet()
   const { publicKey } = wallet
@@ -107,7 +108,14 @@ export default function Home() {
         lastValidBlockHeight: latest.lastValidBlockHeight,
         signature: txid,
       }).then( res => {
-        console.log({res})
+          toast.success('Sucefully Mint!', {
+            position: 'top-center',
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+          });
       })
     } catch (e) {
       const msg = fromTxError(e)

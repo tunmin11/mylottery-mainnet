@@ -2,7 +2,6 @@
 
 import Header from "@/components/layouts/Header";
 import NavBar from "@/components/layouts/NavBar";
-
 import Footer from "@/components/layouts/Footer";
 import Mint from "@/components/layouts/Mint";
 

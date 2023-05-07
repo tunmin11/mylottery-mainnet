@@ -16,7 +16,7 @@ const Mint = () => {
         backgroundImage: 'url(/images/bg.png)',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        height: '100%'
+        // height: '100%'
     };
 
     return (
