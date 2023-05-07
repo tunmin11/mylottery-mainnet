@@ -8,7 +8,7 @@ import Mint from "@/components/layouts/Mint";
 export default function Home() {
   return (
     <main className="bg-white">
-      <NavBar />
+      <NavBar mintVisiable={true} />
       <Header />
       <Mint />
       <Footer />

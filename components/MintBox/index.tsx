@@ -131,15 +131,17 @@ export default function Home() {
       ? Number(candyMachine.candyGuard?.guards.solPayment?.amount.basisPoints) /
           1e9 +
         " SOL"
-      : "Free mint"
+      : "Free"
     : "..."
 
   return (
     <>
       <div className="text-gray-900 h-full flex justify-center p-5">
+      
             <div className="card w-lg-[30%] w-sm-[10%] rounded-md bg-white shadow-lg">
+            
                 <figure className="flex items-center justify-center h-full p-2 border-2 border-red-500 bg-white">
-                    <img style={{ width : '200px'}} src={collection?.json?.image} className="boarder border-red-500 w-20" alt="MyLotte" />
+                    <img style={{ width : '200px'}} src={collection?.json?.image} className="boarder border-red-500 w-20" alt="MyLottery" />
                 </figure>
                 <div className="card-body flex justify-center gap-8">
                     <div className="flex px-5 gap-10">
@@ -152,29 +154,30 @@ export default function Home() {
                             <span>{cost}</span>
                         </div>
                         <div className="py-2 flex item-center">
-                            <button className="btn btn-sm bg-gray-300 border-none hover:bg-gray-300">
-                                <span className="text-red-500 hover:text-red-700 animate-pulse">live</span>
+                            <button className="btn btn-sm bg-white border-none hover:bg-gray-300">
+                                <span className="text-red-500 animate-pulse">live</span>
                             </button>
                         </div>
                     </div>
+                    
                     <div className="w-full flex justify-center">
-                        <button disabled={!publicKey} onClick={handleMintV2} className="btn btn-block bg-red-500 hover:bg-red-600 border-none">mint</button>
+                        <button disabled={!publicKey} onClick={handleMintV2} className="btn btn-block text-white bg-red-500 hover:bg-red-600 border-none">mint</button>
                     </div>
-
                     <WalletMultiButton
-                        style={{
-                        width: "100%",
-                        height: "auto",
-                        marginTop: "8px",
-                        padding: "8px 0",
-                        justifyContent: "center",
-                        fontSize: "13px",
-                        backgroundColor: "#111",
-                        lineHeight: "1.45",
-                        }}
+                     style={{
+                      width: "100%",
+                      height: "auto",
+                      marginTop: "8px",
+                      padding: "8px 0",
+                      justifyContent: "center",
+                      fontSize: "13px",
+                      backgroundColor: "#ff003c",
+                      lineHeight: "1.7",
+                      borderRadius: "20px",
+                      }}
                     />
-                    {formMessage}
 
+                    {formMessage}
                 </div>
             </div>
         </div>

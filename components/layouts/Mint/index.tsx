@@ -2,13 +2,13 @@ import Link from "next/link";
 
 const Mint = () => {
     return  (
-        <div className="flex flex-col lg:text-base text-sm text-center py-4 gap-10 text-gray-800 tracking-wider mb-14">
+        <div className="flex flex-col lg:text-base text-sm text-center py-4 gap-5 text-gray-800 tracking-wider mb-14">
             <p>
-            <a href="#" className="text-red-500 hover:text-red-600">0.5 $SOL</a> will be the GRAND PRICE for this Round. <br/>
+            <a href="#" className="text-red-500 hover:text-red-600">1.5 $SOL</a> will be the GRAND PRICE for this Round. <br/>
             Grab Your Lucky Number By Minting NFT-Lottery Before Too Late.
             </p>
             <div>
-                <Link href={"/mint"} className="btn bg-red-500 hover:bg-red-600 border-none">
+                <Link href={"/mint"} className="btn bg-red-500 text-white hover:bg-red-600 border-none">
                     Mint Now
                 </Link>
             </div>
