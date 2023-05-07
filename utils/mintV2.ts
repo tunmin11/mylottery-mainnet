@@ -379,8 +379,7 @@ export const getRemainingAccountsForCandyGuard = (
       const guardObject = candyMachine.candyGuard?.guards[guardKey]
 
       if (!guardObject) return null
-
-      console.log(`Setting up ${guardKey} Guard...`)
+      // console.log(`Setting up ${guardKey} Guard...`)
       const { accounts, ixs } = getRemainingAccountsByGuardType({
         candyMachine,
         payer,

@@ -19,11 +19,15 @@ import {
   mintV2Instruction,
 } from "@/utils/mintV2"
 import { fromTxError } from "@/utils/errors"
-import { toast } from "react-toastify"
+import { ToastContainer, toast } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
 export default function Home() {
   const wallet = useWallet()
   const { publicKey } = wallet
-  console.log(publicKey)
+  // console.log(publicKey)
   const { connection } = useConnection()
   const [metaplex, setMetaplex] = useState<Metaplex | null>(null)
   const [candyMachine, setCandyMachine] = useState<CandyMachine | null>(null)
@@ -108,7 +112,7 @@ export default function Home() {
         lastValidBlockHeight: latest.lastValidBlockHeight,
         signature: txid,
       }).then( res => {
-          toast.success('Sucefully Mint!', {
+          toast.success('Mint Successful!', {
             position: 'top-center',
             autoClose: 3000,
             hideProgressBar: true,
@@ -136,10 +140,9 @@ export default function Home() {
 
   return (
     <>
+      <ToastContainer />
       <div className="text-gray-900 h-full flex justify-center p-5">
-      
             <div className="card w-lg-[30%] w-sm-[10%] rounded-md bg-white shadow-lg">
-            
                 <figure className="flex items-center justify-center h-full p-2 border-2 border-red-500 bg-white">
                     <img style={{ width : '200px'}} src={collection?.json?.image} className="boarder border-red-500 w-20" alt="MyLottery" />
                 </figure>
