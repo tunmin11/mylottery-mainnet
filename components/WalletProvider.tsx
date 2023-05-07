@@ -15,8 +15,8 @@ import { WalletModalProvider } from "@solana/wallet-adapter-react-ui"
 require("@solana/wallet-adapter-react-ui/styles.css")
 
 const Wallet = ({ children }: { children: React.ReactChild }) => {
-  const endpoint = "https://methodical-fragrant-telescope.solana-mainnet.discover.quiknode.pro/38d80bdcbb153cac19baf986887ce320b5768766/"
-
+  const endpoint = process.env.NEXT_PUBLIC_QUICKNODE_ENDPOINT;
+  
   const wallets = useMemo(
     () => [
       /**
